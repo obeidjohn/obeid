@@ -18,7 +18,6 @@ class UserTableSeeder extends Seeder
     {
         $admin = User::where('username','superadmin')->first();
         if(is_null($admin)){
-
             $admin= new User();
             $admin->name='admin';
             $admin->email='admin@gmail.com';
